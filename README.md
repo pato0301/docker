@@ -14,7 +14,7 @@
   - access a container that is running: docker exec -it container_name language[eg, shell, bash, python, etc] // -it stands for iteractive terminal
   - watch containers logs: docker logs container
   - build image: docker build -t name:version [folder where Dockerfile is, generally .]
-  - pass Dockerfile iamge: -f [MyDockerfile]
+  - pass Dockerfile image: -f [MyDockerfile]
   
 ### Docker run:
   - volumen: -v /Users/<path>:/<container path>
@@ -22,5 +22,6 @@
   - specify user: [-u username]
   - delete container after it finishes running: --rm 
   - interactive terminal: -it 
+  - port: [vm port]:[container port] // eg. 80:3000 
   - enter to the container while running: [language] //just specify the language after all the other parameter.
   - Example: docker run -it [--rm] -v /Users/<path>:/<container path> [-d] [-u username]--name [container name] [image name] [language]
