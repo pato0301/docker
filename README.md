@@ -15,6 +15,8 @@
   - watch containers logs: docker logs container
   - build image: docker build -t name:version [folder where Dockerfile is, generally .]
   - pass Dockerfile image: -f [MyDockerfile]
+  - docker rmi $(docker images -q)  //list every image and delete it
+  - docker stop/rm $(docker ps -a -q)  //list every container and stop it or remove it
   
 ### Docker run:
   - volumen: -v /Users/<path>:/<container path>
